@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic Quiz Application with login and logout options as well as computation of final scores</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="\css\loginreg.css">
+</head>
+<body>
+    <div>
+        <div class="rl">
+            <h1 class="page_2_h1_left">Register</h1>
+            <form action="/create" method="post"><fieldset>
+                <label for="username">Username</label><br/>
+                <input type="text" id="username" name="username" placeholder="Enter username" required><br/>
+                <label for="password">Password</label><br/>
+                <input type="password" id="password" name="password" placeholder="Enter password" required><br/>
+                <input type="submit" name="register" value="Register" ></fieldset>
+            </form>
+        </div>
+        <div class="rl">
+            <h1 class="page_2_h1_right">Login</h1>
+            <form action="/index" method="post"><fieldset>
+                <label for="username_1">&nbsp&nbsp&nbspUsername</label><br/>
+                <input type="text" id="username_1" name="username_1" placeholder="Enter username" required><br/>
+                <label for="password_1">&nbsp&nbsp&nbspPassword</label><br/>
+                <input type="password" id="password_1" name="password_1" placeholder="Enter password" required><br/>
+                <input type="submit" name="login" value="Login"></fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+ 

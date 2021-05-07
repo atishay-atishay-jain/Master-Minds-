@@ -1,0 +1,5 @@
+create database loginregister;
+
+use loginregister;
+
+create table quiz(uid varchar(30) not null , pass varchar(30) not null, caaa int,isatc int,bhraaw int,sm int,rp int,cr int,ba int,ho int,ka int,bo int,dsa int,dsm int,dbms int,smda int,tdm int, Primary key(uid));

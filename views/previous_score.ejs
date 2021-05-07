@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Basic Quiz Application with login and logout options as well as computation of final scores</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="\css\previous_score.css">
+</head>
+<body>
+	<header><h1>Score</h1></header>
+    		<table>
+				<% quiz.forEach((item) => { %>
+				<tr>
+					<td>Current affairs about india</td>
+					<td><%= item.caaa %></td>
+					<td>Cricket</td>
+					<td><%= item.cr %></td>
+					<td>Data structures and algorithms</td>
+					<td><%= item.dsa %></td>
+				</tr>
+				<tr>
+					<td>Indian states and their capitals</td>
+					<td><%= item.isatc %></td>
+					<td>Badminton</td>
+					<td><%= item.ba %></td>
+					<td>Digital systems and microprocessors</td>
+					<td><%= item.dsm %></td>
+				</tr>
+				<tr>
+					<td>Bharat ratna awardees</td>
+					<td><%= item.bhraaw %></td>
+					<td>Hockey</td>
+					<td><%= item.ho %></td>
+					<td>Database Management system</td>
+					<td><%= item.dbms %></td>
+				</tr>
+				<tr>
+					<td>Social movements</td>
+					<td><%= item.sm %></td>
+					<td>Kabaddi</td>
+					<td><%= item.ka %></td>
+					<td>Statistical methods and data analysis</td>
+					<td><%= item.smda %></td>
+				</tr>
+				<tr>
+					<td>Renowned personalities</td>
+					<td><%= item.rp %></td>
+					<td>Boxing</td>
+					<td><%= item.bo %></td>
+					<td>Techniques for decision making</td>
+					<td><%= item.tdm %></td>
+				</tr>
+				<% }) %>
+			</table>
+</body>
+</html>

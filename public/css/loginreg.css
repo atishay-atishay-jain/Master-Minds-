@@ -1,0 +1,50 @@
+body{
+    background-image: url('/images/pexels-moose-photos-1037992.jpg');
+    background-size: cover;
+    margin: 1%;
+    padding: 1%;
+}
+.rl{
+  display: inline-block;
+  width: 47%;
+  margin: 1%;
+  padding: 1%;
+  height: 78vh;
+}
+
+form{
+  text-align: center;
+  margin: 1%;
+  padding: 1%;
+}
+
+.page_2_h1_left{
+  text-align: center;
+  font-size: 60px;
+  color: #3399FF;
+  font-variant: small-caps;
+  padding-top: 20px;
+}
+
+.page_2_h1_right{
+  text-align: center;
+  font-size: 60px;
+  color: #3399FF;
+  font-variant: small-caps;
+  padding-right: 80px
+}
+
+label{
+  font-size: 22.5px;
+  margin: 1%;
+  padding-left: 0px;
+  padding-right: 140px;
+}
+input{
+  font-size: 18px;
+  margin: 1%;
+  padding:8px;
+}
+#username, #password,{
+  padding-left: 25px;
+}

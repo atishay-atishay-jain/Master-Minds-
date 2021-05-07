@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Basic Quiz Application with login and logout options as well as computation of final scores</title>
+	<link rel="stylesheet" href="https://Basic Quiz Application with login and logout options as well as computation of final scoresmaxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="\css\topicpage_1.css">
+	<script>
+		function score(){
+	    var count=0;
+	    if (document.getElementById('correct_1').checked) {
+	    	count=count+1;
+	    }
+	    if (document.getElementById('correct_2').checked) {
+			count=count+1;
+		}
+		if (document.getElementById('correct_3').checked) {
+			count=count+1;
+		}
+		alert("Score obtained = " + count + "\nRedirecting to the home screen");
+		window.location.replace('/');
+		}
+	</script>
+</head>
+<body>
+	<main>
+		<form>
+			<h2>Q1 Who was known as Iron man of India ?</h2>
+			<aside><p>1 point</p></aside>
+			<label class="transform"><input type="radio" checked="checked" name="renownedpersonalities" value="Subhash Chandra Bose">Subhash Chandra Bose <span class="correct"></span></label><br/>
+			<label class="transform"><input type="radio" name="renownedpersonalities" value="Sardar Vallabhbhai Patel" id="correct_1">Sardar Vallabhbhai Patel <span class="correct"></span></label><br/>
+			<label class="transform"><input type="radio" name="renownedpersonalities" value="Govind Ballabh Pant">Govind Ballabh Pant <span class="correct"></span></label><br/>
+			<label class="transform"><input type="radio" name="renownedpersonalities" value="Jawaharlal Nehru">Jawaharlal Nehru <span class="correct"></span></label><br/>	
+			<h2>Q2 The Indian to beat the computers in mathematical wizardry is ?</h2>
+			<aside><p>1 point</p></aside>
+			<label class="transform"><input type="radio" checked="checked" name="renownedpersonalities_1" value="Shakunthala Devi" id="correct_2">Shakunthala Devi <span class="correct"></span></label><br/>
+			<label class="transform"><input type="radio" name="renownedpersonalities_1" value="Ramanujam">Ramanujam <span class="correct"></span></label><br/>
+			<label class="transform"><input type="radio" name="renownedpersonalities_1" value="Rina Panigrahi">Rina Panigrahi <span class="correct"></span></label><br/>
+			<label class="transform"><input type="radio" name="renownedpersonalities_1" value="Raja Ramanna">Raja Ramanna <span class="correct"></span></label><br/>
+			<h2>Q3 Guru Gopi Krishna was a maestro of which of the following dance format ?</h2>
+			<aside><p>1 point</p></aside>
+			<label class="transform"><input type="radio" checked="checked" name="renownedpersonalities_2" value="Bahratanatyam">Bahratanatyam <span class="correct"></span></label><br/>
+			<label class="transform"><input type="radio" name="renownedpersonalities_2" value="Kuchipudi">Kuchipudi <span class="correct"></span></label><br/>
+			<label class="transform"><input type="radio" name="renownedpersonalities_2" value="Kathak" id="correct_3">Kathak <span class="correct"></span></label><br/>
+			<label class="transform"><input type="radio" name="renownedpersonalities_2" value="Manipuri">Manipuri <span class="correct"></span></label><br/>
+			<input type="button" value="Submit" name="submission" class="transform_1" onclick="score()">
+		</form>	
+	</main>
+	</body>
+</html>

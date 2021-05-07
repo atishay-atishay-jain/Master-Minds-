@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Basic Quiz Application with login and logout options as well as computation of final scores</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="\css\topicpage_1.css">
+	<script>
+		function score(){
+	    var count=0;
+	    if (document.getElementById('correct_1').checked) {
+	    	count=count+1;
+	    }
+	    if (document.getElementById('correct_2').checked) {
+			count=count+1;
+		}
+		if (document.getElementById('correct_3').checked) {
+			count=count+1;
+		}
+		alert("Score obtained = " + count + "\nRedirecting to the home screen");
+		//window.location.replace('/');
+		}
+	</script>
+</head>
+<body>
+	<main>
+		<form action="/box" method="post" onsubmit="score()">
+			<h2>Q1 When did Mangte Chungneijang Mary Kom receive Padma Vibhushan ?</h2>
+			<aside><p>1 point</p></aside>
+			<label class="transform"><input type="radio" checked="checked" name="boxing" value="2020" id="correct_1">2020 <span class="correct"></span></label><br/>
+			<label class="transform"><input type="radio" name="boxing" value="2019">2019 <span class="correct"></span></label><br/>
+			<label class="transform"><input type="radio" name="boxing" value="2018">2018 <span class="correct"></span></label><br/>
+			<label class="transform"><input type="radio" name="boxing" value="2017">2017 <span class="correct"></span></label><br/>	
+			<h2>Q2 Which India boxer bagged a gold medal at the AIBA Youth World Championships ?</h2>
+			<aside><p>1 point</p></aside>
+			<label class="transform"><input type="radio" checked="checked" name="boxing_1" value="Sachin Singh">Sachin Singh <span class="correct"></span></label><br/>
+			<label class="transform"><input type="radio" name="boxing_1" value="Thokchom Nanao Singh">Thokchom Nanao Singh <span class="correct"></span></label><br/>
+			<label class="transform"><input type="radio" name="boxing_1" value="Vikas Krishan">Vikas Krishan <span class="correct"></span></label><br/>
+			<label class="transform"><input type="radio" name="boxing_1" value="All of the above" id="correct_2">All of the above <span class="correct"></span></label><br/>
+			<h2>Q3 Vijender Singh Beniwal's olympic medal tally inludes ?</h2>
+			<aside><p>1 point</p></aside>
+			<label class="transform"><input type="radio" checked="checked" name="boxing_2" value="0 Bronze Medal">0 Bronze Medal <span class="correct"></span></label><br/>
+			<label class="transform"><input type="radio" name="boxing_2" value="1 Bronze Medal" id="correct_3">1 Bronze Medal <span class="correct"></span></label><br/>
+			<label class="transform"><input type="radio" name="boxing_2" value="2 Bronze Medal">2 Bronze Medal <span class="correct"></span></label><br/>
+			<label class="transform"><input type="radio" name="boxing_2" value="3 Bronze Medal">3 Bronze Medal <span class="correct"></span></label><br/>
+			<input type="submit" value="Submit" name="submission" class="transform_1">
+		</form>	
+	</main>
+</body>
+</html>

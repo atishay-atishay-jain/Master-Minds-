@@ -1,0 +1,19 @@
+.page_1_body{
+      background-image: url('/images/pexels-tirachard-kumtanom-733857.jpg');
+      margin: 1%;
+      padding: 1%;
+      padding-top: 33%;
+}
+
+.page_1_h1{
+      font-variant: small-caps;
+      text-align: right;
+}
+
+.page_1_a:hover{
+      text-decoration: none;
+}
+
+.page_1_footer{
+      color: #202124;
+}
